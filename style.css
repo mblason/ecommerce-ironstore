@@ -1,59 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;400&family=Poppins:wght@200;400;800&family=Roboto:wght@100;300;500&display=swap');
+
 *{
     transition: all 1s;
+    font-family: font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 
 body{
     padding: 10px;
-    background-color: lightseagreen;
-
+    background-color: whitesmoke;
 }
 
 section{
     display: flex;
-    flex-direction: row;
+    flex-direction: row;    
 }
 
-
-img {
-    width: 50px;
+div {
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: 5px -5px rgba(211, 211, 211, 0.241);
+    margin: 2%;    
 }
 
+h2 {
+    padding-left: 6.5%;
+    color: rgba(39, 122, 255, 0.749)
+}
 
-#cart{
-    background-color:salmon;
+hr {
+    width: 120px;
+    margin-left: 6.5%;
+    margin-bottom: 6.5%;
+    color: rgba(211, 211, 211, 0.1);    
+}
+
+li {
+    position: relative;
+    list-style-type: none;
+    font-weight: 300;
+}
+
+#cart li {
+    margin-bottom: 80px;
+}
+
+#items img {
+    width: 80px;
+    position: absolute;
+    left: 50%;
+    top: 2%;
+}
+
+#cart img {
+    width: 80px;
+    position: absolute;
+    left: 50%;
+    top: 1%;
 }
 
 #cart, #items{
-    width: 50vw;
+   width: 550px;
+   height: 0;
 }
 
-
-
-
-
-
-
-
-
-h1{
-    color:#7c32ff;
-}
-/*selecting a tag*/
-
-p{
-    color:green;
-    text-decoration: line-through;
+input {
+    width: 65px;
+    border-radius: 5px;
+    border-color:rgba(211, 211, 211, 0.5);
+    border-width: 0.2ch;
+    padding: 3.1px;
+    color: black;
 }
 
-
-/*Ids have hashtags*/
-#two {
-    background-color:rebeccapurple;
+button {
+    background-color: rgba(39, 122, 255, 0.749);
+    width: 80px;
+    border-radius: 5px;
+    border-style: none;
+    padding: 5px 10px;
+    color: white;
+    font-weight: 350;
 }
 
-/*classes have dots*/
-.example {
-    border: 5px dashed purple;
-    margin: 5px;
+.payButton {
+    background-color: rgba(39, 122, 255, 0.749);
+    width: 80px;
+    border-radius: 5px;
+    border-style: none;
+    padding: 5px 10px;
+    color: white;
+    font-weight: 350;
+    margin-top: 90%;
+    margin-left: 6.5%;
+    margin-bottom: 5%;
 }
+

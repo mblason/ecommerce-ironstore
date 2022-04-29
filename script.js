@@ -33,11 +33,18 @@ let list = document.querySelector('#items')
 
 items.forEach((item,i)=>{
     list.innerHTML += `<li>
-        <div>Name: ${item.name}</div>
-        <div>price: $${item.price}</div>
+        <span>Name: ${item.name}</span>
+        <br>
+        <br>
+        <span>Price: $${item.price}</span>
         <image src="${item.image}" />
+        <br>
+        <br>
         <input type="number" placeholder="quantity" onchange='inputChange(${i}, "${item.name}", "${item.price}", "${item.image}")'/>
-        <button>Buy Item</button>
+        <button>Buy</button>
+        <br>
+        <br>
+        <br>
     </li>`
 })
 
@@ -49,8 +56,10 @@ function showCart() {
     cart.forEach((item,i)=>{
         grandTotal+= item.price * item.quantity
         cartItems.innerHTML += `<li>
-            <div>Name: ${item.name}</div>
-            <div>Quantity: ${item.quantity}</div>
+            <span>Name: ${item.name}</span>
+            <br>
+            <br>
+            <span>Quantity: ${item.quantity}</span>
             <image src="${item.image}" />
         </li>`
     })
